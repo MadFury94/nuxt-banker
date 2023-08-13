@@ -1,51 +1,7 @@
-<!-- <template>
-  <div>
-    <footer class="text-white bg-primary-500">
-      <div class="container mx-auto px-4 md:px-6 lg:px-8 xl:px-10 py-8">
-        <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-6">
-          <div>
-            <h1 class="text-lg md:text-xl font-bold">Address</h1>
-            <p class="text-sm md:text-base mt-2">
-              7 Aremu Bukola Crescent Pero Close Ogombo Off Abraham Adesanya
-              Estate Ajah, Lekki, Lagos.
-            </p>
-          </div>
-          <div>
-            <h1 class="text-lg md:text-xl font-bold">Opening Hours</h1>
-            <p class="text-sm md:text-base mt-2">Monday - Friday</p>
-            <p class="text-sm md:text-base">09:00 AM - 06:00 PM</p>
-            <p class="text-sm md:text-base">Saturday</p>
-            <p class="text-sm md:text-base">10:00 AM - 05:00 PM</p>
-          </div>
-          <div>
-            <h1 class="text-lg md:text-xl font-bold">650-732-9369</h1>
-            <p class="text-sm md:text-base mt-2">
-              If you have any question, feel free to contact us
-              contact@sprynxmulti.com
-            </p>
-          </div>
-          <div>
-            <h1 class="text-lg md:text-xl font-bold">Newsletter</h1>
-            <p class="text-sm md:text-base mt-2">
-              Join our newsletter for latest Updates
-            </p>
-          </div>
-        </div>
-        <div class="mt-8 text-center">
-          <p class="text-sm">
-            Mister Carwash Template – Ovatheme @ 2021. All Rights Reserved
-          </p>
-        </div>
-      </div>
-    </footer>
-  </div>
-</template> -->
-
 <template>
   <div
-    class="px-4 relative"
+    class="px-4 relative bg-gray-800"
     :style="{
-      'background-image': `url(https://res.cloudinary.com/dqwfjxn8g/image/upload/v1691081374/beautiful-car-washing-service_yeptnx.jpg)`,
       'background-position': 'center center',
       'background-repeat': 'no-repeat',
       'background-size': 'cover',
@@ -59,11 +15,12 @@
           <div class="space-y-8">
             <img
               class="h-14"
-              src="https://res.cloudinary.com/dqwfjxn8g/image/upload/v1691660881/sprynx_new_logo-color-01_uir9hg.png"
-              alt="Company name"
+              src="https://res.cloudinary.com/dqwfjxn8g/image/upload/v1691917489/Skillset_hql5da.png"
+              alt="Your Online Banker Logo"
             />
             <p class="text-sm leading-6 text-white">
-              Washing and delivering quality Car washng service.
+              Welcome to Your Online Banker, your go-to source for all things
+              banking. Empowering businesses to protect from fraud.
             </p>
             <div class="flex space-x-6">
               <a
@@ -88,8 +45,9 @@
                     <a
                       :href="item.href"
                       class="text-sm leading-6 text-white hover:text-white"
-                      >{{ item.name }}</a
                     >
+                      {{ item.name }}
+                    </a>
                   </li>
                 </ul>
               </div>
@@ -102,8 +60,9 @@
                     <a
                       :href="item.href"
                       class="text-sm leading-6 text-white hover:text-white"
-                      >{{ item.name }}</a
                     >
+                      {{ item.name }}
+                    </a>
                   </li>
                 </ul>
               </div>
@@ -111,15 +70,16 @@
             <div class="md:grid md:grid-cols-2 md:gap-8">
               <div>
                 <h3 class="text-sm font-semibold leading-6 text-white">
-                  Company
+                  About Us
                 </h3>
                 <ul role="list" class="mt-6 space-y-4">
                   <li v-for="item in navigation.company" :key="item.name">
                     <a
                       :href="item.href"
                       class="text-sm leading-6 text-white hover:text-white"
-                      >{{ item.name }}</a
                     >
+                      {{ item.name }}
+                    </a>
                   </li>
                 </ul>
               </div>
@@ -132,8 +92,9 @@
                     <a
                       :href="item.href"
                       class="text-sm leading-6 text-white hover:text-white"
-                      >{{ item.name }}</a
                     >
+                      {{ item.name }}
+                    </a>
                   </li>
                 </ul>
               </div>
@@ -142,36 +103,35 @@
         </div>
         <div class="mt-16 border-t border-white/10 pt-8 sm:mt-20 lg:mt-24">
           <p class="text-xs leading-5 text-gray-400">
-            &copy; 2023 Katalyst Tech, Inc. All rights reserved.
+            &copy; 2023 Your Online Banker. All rights reserved.
           </p>
         </div>
       </div>
     </footer>
   </div>
 </template>
-
 <script setup>
 import { defineComponent, h } from "vue";
 
 const navigation = {
   solutions: [
-    { name: "Car Wash", href: "#" },
-    { name: "Car Detaling", href: "#" },
-    { name: "Oil Change", href: "#" },
-    { name: "Servicing", href: "#" },
+    { name: "Report Fraud", href: "#" },
+    { name: "Banking Security", href: "#" },
+    { name: "Resources", href: "#" },
+    { name: "Expert Assistance", href: "#" },
   ],
   support: [
-    { name: "Pricing", href: "#" },
+    { name: "Customer Support", href: "#" },
     { name: "Contact", href: "#" },
   ],
   company: [
     { name: "About", href: "#" },
     { name: "Blog", href: "#" },
     { name: "Jobs", href: "#" },
-    { name: "Partners", href: "#" },
+    { name: "Community", href: "#" },
   ],
   legal: [
-    { name: "Claim", href: "#" },
+    { name: "Report Claim", href: "#" },
     { name: "Privacy", href: "#" },
     { name: "Terms", href: "#" },
   ],
@@ -255,7 +215,7 @@ const navigation = {
   left: 0;
   width: 100%;
   height: 100%;
-  background-color: rgba(33, 49, 125, 0.9); /* Adjust the opacity as needed */
+  background-color: rgba(3, 69, 25, 0.9); /* Adjust the opacity as needed */
   z-index: 1;
 }
 .text-wrapper {
