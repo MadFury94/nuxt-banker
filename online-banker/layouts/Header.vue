@@ -58,7 +58,7 @@
                   >
                     <component
                       :is="item.icon"
-                      class="h-6 w-6 text-gray-600 group-hover:text-indigo-600"
+                      class="h-6 w-6 text-gray-600 group-hover:text-primary-600"
                       aria-hidden="true"
                     />
                   </div>
@@ -195,7 +195,7 @@
                   >
                     <component
                       :is="item.icon"
-                      class="h-6 w-6 text-gray-600 group-hover:text-indigo-600"
+                      class="h-6 w-6 text-gray-600 group-hover:text-primary-600"
                       aria-hidden="true"
                     />
                   </div>
@@ -243,10 +243,8 @@ import {
 import {
   ArrowPathIcon,
   Bars3Icon,
-  ChartPieIcon,
-  CursorArrowRaysIcon,
-  FingerPrintIcon,
-  SquaresPlusIcon,
+  HomeIcon,
+  CloudIcon,
   XMarkIcon,
 } from "@heroicons/vue/24/outline";
 import {
@@ -257,31 +255,19 @@ import {
 
 const products = [
   {
-    name: "Account Overview",
-    description: "View the current status of your bank accounts",
-    href: "#",
-    icon: ChartPieIcon,
-  },
-  {
-    name: "Transaction History",
-    description: "Review all your past transactions in detail",
-    href: "#",
-    icon: CursorArrowRaysIcon,
-  },
-  {
-    name: "Fraud Reporting",
+    name: "Home",
     description: "Report any suspicious activities on your account",
     href: "#",
-    icon: FingerPrintIcon,
+    icon: HomeIcon,
   },
   {
-    name: "Safety Tips",
+    name: "About",
     description: "Learn how to keep your online banking secure",
     href: "#",
-    icon: SquaresPlusIcon,
+    icon: CloudIcon,
   },
   {
-    name: "Settings & Integrations",
+    name: "Services",
     description:
       "Customize your banking experience and connect with other tools",
     href: "#",
@@ -293,13 +279,6 @@ const callsToAction = [
   { name: "Contact Support", href: "#", icon: PhoneIcon },
 ];
 const company = [
-  {
-    name: "About Us",
-    href: "#",
-    description:
-      "Learn more about our mission to enhance online banking security",
-  },
-
   {
     name: "Resources",
     href: "#",
