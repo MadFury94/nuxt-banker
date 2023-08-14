@@ -1,6 +1,6 @@
 <template>
   <div
-    class="px-4 relative bg-gray-800"
+    class="px-4 relative bg-secondary-700"
     :style="{
       'background-position': 'center center',
       'background-repeat': 'no-repeat',
@@ -215,7 +215,6 @@ const navigation = {
   left: 0;
   width: 100%;
   height: 100%;
-  background-color: rgba(3, 69, 25, 0.9); /* Adjust the opacity as needed */
   z-index: 1;
 }
 .text-wrapper {
