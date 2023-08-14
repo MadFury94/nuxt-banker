@@ -1,9 +1,13 @@
 <template>
   <div>
-    <div class="bg-red-500 h-screen">home page</div>
+    <div>
+      <HeroSecton />
+    </div>
   </div>
 </template>
 
-<script setup lang="ts"></script>
+<script setup lang="ts">
+import HeroSecton from "./sections/HeroSecton.vue";
+</script>
 
 <style lang="scss" scoped></style>
