@@ -29,7 +29,7 @@
           <PopoverButton
             class="flex items-center gap-x-1 text-sm font-semibold leading-6 text-gray-900"
           >
-            Report
+            Home
             <ChevronDownIcon
               class="h-5 w-5 flex-none text-gray-400"
               aria-hidden="true"
@@ -49,7 +49,7 @@
             >
               <div class="p-4">
                 <div
-                  v-for="item in products"
+                  v-for="item in fraudOptions"
                   :key="item.name"
                   class="group relative flex gap-x-6 rounded-lg p-4 text-sm leading-6 hover:bg-gray-50"
                 >
@@ -185,7 +185,7 @@
             <div class="-my-6 divide-y divide-gray-500/10">
               <div class="space-y-2 py-6">
                 <a
-                  v-for="item in products"
+                  v-for="item in fraudOptions"
                   :key="item.name"
                   :href="item.href"
                   class="group -mx-3 flex items-center gap-x-6 rounded-lg p-3 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50"
@@ -246,6 +246,7 @@ import {
   HomeIcon,
   CloudIcon,
   XMarkIcon,
+  ShieldCheckIcon,
 } from "@heroicons/vue/24/outline";
 import {
   ChevronDownIcon,
@@ -253,25 +254,30 @@ import {
   PlayCircleIcon,
 } from "@heroicons/vue/20/solid";
 
-const products = [
+const fraudOptions = [
   {
     name: "Home",
-    description: "Report any suspicious activities on your account",
+    description: "Homepage",
     href: "#",
     icon: HomeIcon,
   },
   {
-    name: "About",
-    description: "Learn how to keep your online banking secure",
+    name: "Phishing Attacks",
+    description: "Report phishing emails, messages or websites.",
     href: "#",
-    icon: CloudIcon,
+    icon: ShieldCheckIcon,
   },
   {
-    name: "Services",
-    description:
-      "Customize your banking experience and connect with other tools",
+    name: "Unusual Transactions",
+    description: "Report any suspicious transactions on your account.",
     href: "#",
     icon: ArrowPathIcon,
+  },
+  {
+    name: "Identity Theft",
+    description: "Believe someone is using your identity? Report here.",
+    href: "#",
+    icon: HomeIcon,
   },
 ];
 const callsToAction = [
