@@ -88,3 +88,15 @@ export interface AppConfigData {
     iconstyle?: string;
   };
   
+
+
+export type PageDataType = {
+  learn?: {
+    title: string;
+    description: string;
+  };
+  banking?: {
+    title: string;
+    description: string;
+  };
+};

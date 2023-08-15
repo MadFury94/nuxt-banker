@@ -10,7 +10,7 @@
             },
           }"
         >
-          <span class="text-3xl"> {{ item.title }}</span>
+          <span class="text-3xl">{{ item.title }}</span>
           <p>{{ item.description }}</p>
         </NuxtLink>
       </li>
