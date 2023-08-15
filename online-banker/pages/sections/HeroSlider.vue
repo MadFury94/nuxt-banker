@@ -38,9 +38,9 @@
                   >
                     {{ item.description }}
                   </p>
-                  <!-- <div class="flex gap-x-6 relative z-10">
+                  <div class="flex gap-x-6 relative z-10">
                     <ButtonComponent :title="item.button" link="index" />
-                  </div> -->
+                  </div>
                 </div>
               </div>
             </div>
