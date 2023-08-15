@@ -17,10 +17,10 @@
     <Splide :has-track="false" :options="options" aria-label="My Slide">
       <SplideTrack>
         <SplideSlide v-for="(feature, index) in features" :key="index">
-          <div class="mx-auto max-w-7xl lg:px-14">
+          <div class="mx-auto max-w-7xl lg:px-14 px-4">
             <div class="mt-16 max-w-2xl sm:mt-20 lg:mt-24 lg:max-w-none">
               <dl>
-                <div class="flex flex-col">
+                <div class="">
                   <dt
                     class="flex items-center gap-x-3 text-base font-semibold leading-7 text-gray-700"
                   >
@@ -135,16 +135,21 @@ const features: Features[] = [
 ];
 const options = {
   rewind: true,
-  gap: "0rem",
-  type: "loop",
-  pagination: false,
-  arrows: true,
   perPage: 3,
+  gap: ".1rem",
+  type: "loop",
+  pagination: true,
+  arrows: true,
   breakpoints: {
-    1200: { perPage: 3, gap: 1, arrows: true },
-    640: { perPage: 1, gap: 0, arrows: false },
+    640: {
+      perPage: 1,
+      gap: ".7rem",
+    },
+    1030: {
+      perPage: 2,
+      gap: "1rem",
+    },
   },
-
   autoplay: true,
 };
 </script>
