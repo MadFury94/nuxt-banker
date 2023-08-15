@@ -3,7 +3,13 @@
     <h1 class="font-semibold hidden lg:block">{{ pageInfo?.title }}</h1>
     <h1 class="font-semibold mt-20">Personal Information</h1>
 
-    <div class="mt-40"></div>
+    <div class="flex justify-center">
+
+<div class="w-full mx-10">
+  <input class="border-2 border-red-500 w-full" type="text" />
+</div>
+
+    </div>
   </div>
 </template>
 

@@ -12,6 +12,7 @@
      
         <h1>{{ $route.meta.title }}</h1>
         <h1>{{ $route.meta.description }}</h1>
+      <button @click="$router.go(-1)">go back</button>
       </div>
      </div>
     </div>
