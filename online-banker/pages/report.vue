@@ -6,6 +6,7 @@
 definePageMeta({
   name: "report",
   title: "Report", // define meta for this route.
+  layout: "report-layout",
 });
 </script>
 
