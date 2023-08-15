@@ -37,7 +37,7 @@ module.exports = {
         600: "#008CBA",
         700: "#005E80",
         800: "#003045",
-        900: "#001520",
+        900: "#1A1A1A",
       },
       white: colors.white,
       gray: colors.gray,

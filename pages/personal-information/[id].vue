@@ -1,14 +1,14 @@
 <template>
-  <div>
-    <h1 class="font-semibold hidden lg:block">{{ pageInfo?.title }}</h1>
+  <div class="p-10">
+    <h1 class="font-semibold hidden text-4xl lg:block">
+      {{ pageInfo?.title }}
+    </h1>
     <h1 class="font-semibold mt-20">Personal Information</h1>
 
     <div class="flex justify-center">
-
-<div class="w-full mx-10">
-  <input class="border-2 border-red-500 w-full" type="text" />
-</div>
-
+      <div class="w-full">
+        <input class="border-2 border-red-500 w-full" type="text" />
+      </div>
     </div>
   </div>
 </template>
@@ -20,7 +20,8 @@ import { PageDataType } from "../../types/model";
 
 definePageMeta({
   title: "Personal Information",
-  image: "https://i.imgur.com/3uVxKCd.png",
+  image:
+    "https://res.cloudinary.com/dqwfjxn8g/image/upload/v1692097687/pretty-dark-skinned-young-woman-with-afro-hairstyle-smiles-joyfully-advertises-something-cool-appealing_e9hzue.jpg",
   name: "personal-info",
   layout: "report-layout",
 });

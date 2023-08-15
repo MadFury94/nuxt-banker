@@ -23,27 +23,48 @@ definePageMeta({
   name: "report",
   title: `WE ARE HERE TO SOLVE YOUR ISSUES`,
   description:
-    "We are here to solve your issues. We are here to solve your issues.",
+    "Follow the prompts on the right so we understand you better and know how we can help",
   layout: "report-layout",
-  image: "/assets/images/hero.png",
+  image:
+    "https://res.cloudinary.com/dqwfjxn8g/image/upload/v1692097687/pretty-dark-skinned-young-woman-with-afro-hairstyle-smiles-joyfully-advertises-something-cool-appealing_e9hzue.jpg",
 });
 const menuItems = [
   {
-    "id":'banking',
+    id: "banking",
     title: "BANKING/ FINANCE CONSULTATION",
     subDescription: "",
 
     description: "report banking issues",
   },
   {
-    id:'learn',
+    id: "learn",
     title: "LEARN FINANCIAL LITERACY ",
     subDescription: "",
     description: "leanr about oney",
   },
   {
-    id:'efcc',
+    id: "efcc",
     title: "CONTACT EFCC ",
+    subDescription: "",
+    description: "contact the authorities",
+  },
+  {
+    id: "account",
+    subDescription: "",
+    title: "Bank Account Opening",
+    description: "contact the authorities",
+  },
+
+  {
+    id: "complaints",
+    subDescription: "",
+
+    title: "General Complaints",
+    description: "contact the authorities",
+  },
+  {
+    id: "sme",
+    title: "SME Consultation",
     subDescription: "",
     description: "contact the authorities",
   },

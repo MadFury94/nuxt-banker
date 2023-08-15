@@ -6,7 +6,7 @@
       <CtaSlider />
       <NumberCounter />
       <HeroSecton />
-
+      <FaqSection />
       <ContactSection />
     </div>
   </div>
@@ -18,6 +18,7 @@ import HeroSlider from "./sections/HeroSlider.vue";
 import NumberCounter from "./sections/NumberCounter.vue";
 import ContactSection from "./sections/ContactSection.vue";
 import CtaSlider from "./sections/CtaSlider.vue";
+import FaqSection from "./sections/FaqSection.vue";
 </script>
 
 <style lang="scss" scoped></style>

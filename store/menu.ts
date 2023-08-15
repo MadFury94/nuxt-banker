@@ -18,5 +18,24 @@ export const  reportMenu = [
         title: "Contact Effc",
         description: "contact the authorities",
       }
-    }
+    },
+    {
+      account:{
+        title: "Bank Account Opening",
+        description: "contact the authorities",
+      }
+    },
+    {
+      complaints:{
+        title: "General Complaints",
+        description: "contact the authorities",
+      }
+    },
+    {
+      sme:{
+        title: "SME Consultation",
+        description: "contact the authorities",
+      }
+    },
+    
   ];
