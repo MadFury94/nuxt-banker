@@ -1,10 +1,9 @@
 <template>
   <div>
-    <h1 class="font-semibold">{{ pageInfo?.title }}</h1>
+    <h1 class="font-semibold hidden lg:block">{{ pageInfo?.title }}</h1>
+    <h1 class="font-semibold mt-20">Personal Information</h1>
 
-    <div class="mt-40">
-      <h1>Personla Infor amtion</h1>
-    </div>
+    <div class="mt-40"></div>
   </div>
 </template>
 
@@ -22,9 +21,6 @@ definePageMeta({
 
 const $route = useRoute();
 
-
-
-
 const pageInfo = computed(() => {
   const id = $route.params.id as keyof PageDataType;
   // loop and find the page data
@@ -35,8 +31,7 @@ const pageInfo = computed(() => {
   return page ? page[id] : null;
 });
 
-const pageData = reportMenu
+const pageData = reportMenu;
 </script>
 
 <style scoped></style>
-

@@ -1,10 +1,10 @@
 <template>
  <div>
   <Header />
-  <div class="grid lg:grid-cols-5 h-screen">
-    <div class="col-span-2 bg-red-200">
-     <div class="flex justify-center items-center h-screen">
-      <div class="p-8">
+  <div class="grid lg:grid-cols-5 ">
+    <div class=" col-span-2 bg-red-200 h-80 lg:h-screen">
+     <div class="flex justify-center items-center lg:h-screen">
+      <div class="p-8 h-20">
         <template v-if="pageInfo">
           <h1 class="text-3xl">{{ pageInfo?.title}}</h1>
         <h1>{{ pageInfo?.description}}</h1>
