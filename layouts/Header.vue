@@ -14,7 +14,8 @@
           />
         </a>
       </div>
-      <div class="flex lg:hidden">
+      <div class="flex gap-x-4 lg:hidden">
+        <ButtonComponent title="Report" link="report" /> 
         <button
           type="button"
           class="-m-2.5 inline-flex items-center justify-center rounded-md p-2.5 text-gray-700"
@@ -233,28 +234,29 @@
 </template>
 
 <script setup>
-import { ref } from "vue";
+
 import {
-  Dialog,
-  DialogPanel,
-  Popover,
-  PopoverButton,
-  PopoverGroup,
-  PopoverPanel,
+Dialog,
+DialogPanel,
+Popover,
+PopoverButton,
+PopoverGroup,
+PopoverPanel,
 } from "@headlessui/vue";
 import {
-  ArrowPathIcon,
-  Bars3Icon,
-  HomeIcon,
-  CloudIcon,
-  XMarkIcon,
-  ShieldCheckIcon,
-} from "@heroicons/vue/24/outline";
-import {
-  ChevronDownIcon,
-  PhoneIcon,
-  PlayCircleIcon,
+ChevronDownIcon,
+PhoneIcon,
+PlayCircleIcon,
 } from "@heroicons/vue/20/solid";
+import {
+ArrowPathIcon,
+Bars3Icon,
+HomeIcon,
+ShieldCheckIcon,
+XMarkIcon
+} from "@heroicons/vue/24/outline";
+import { ref } from "vue";
+import ButtonComponent from "../components/ButtonComponent.vue";
 
 const fraudOptions = [
   {
