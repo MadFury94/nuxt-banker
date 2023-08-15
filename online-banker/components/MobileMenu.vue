@@ -2,7 +2,7 @@
   <div>
     <div
       style="height: 96%"
-      class="absolute right-8 top-4 w-96 rounded-lg bg-white text-gray-900 shadow-lg dark:bg-secondary-900 dark:text-white"
+      class="absolute right-8 top-4 w-96 rounded-lg bg-white text-gray-900 shadow-lg dark:bg-primary-900 dark:text-white"
     >
       <div>
         <button @click="modalStore.hideModal()" class="absolute right-6 top-6">

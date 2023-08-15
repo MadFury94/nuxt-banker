@@ -1,5 +1,5 @@
 <template>
-  <div class="mx-auto bg-secondary-700">
+  <div class="mx-auto bg-primary-700">
     <section class="text-center">
       <div ref="records" class="image py-5">
         <div class="flex grid-cols-4 flex-col lg:grid">

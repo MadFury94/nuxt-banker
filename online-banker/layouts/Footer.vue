@@ -1,6 +1,6 @@
 <template>
   <div
-    class="px-4 relative bg-secondary-700"
+    class="px-4 relative bg-primary-700"
     :style="{
       'background-position': 'center center',
       'background-repeat': 'no-repeat',
@@ -102,7 +102,7 @@
           </div>
         </div>
         <div class="mt-16 border-t border-white/10 pt-8 sm:mt-20 lg:mt-24">
-          <p class="text-xs leading-5 text-gray-400">
+          <p class="text-xs leading-5 text-gray-800">
             &copy; 2023 Your Online Banker. All rights reserved.
           </p>
         </div>

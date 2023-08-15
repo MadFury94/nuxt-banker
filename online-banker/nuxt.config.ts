@@ -10,11 +10,11 @@ export default defineNuxtConfig({
     // layoutTransition: { name: "layout", mode: "out-in" },
     head:{
       link:[
-        {
-        rel: "stylesheet",
-        href:"/assets/fa/css/all.min.css"
+      //   {
+      //   rel: "stylesheet",
+      //   href:"/assets/fa/css/all.min.css"
 
-      },
+      // },
 
       {
         rel:"stylesheet",

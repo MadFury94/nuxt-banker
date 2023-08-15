@@ -17,7 +17,7 @@
                 <div class="hidden sm:mb-8 sm:flex"></div>
                 <div class="lg:text-start">
                   <h1
-                    class="text-base my-2 font-semibold leading-6 text-secondary-500 ring-1 ring-inset ring-indigo-600/10 relative z-10"
+                    class="text-base my-2 font-semibold leading-6 text-primary-500 ring-1 ring-inset ring-primary-600/10 relative z-10"
                   >
                     {{ item.heading }}
                   </h1>
@@ -64,7 +64,6 @@ import "@splidejs/vue-splide/css";
 import { ref } from "vue";
 
 // or other themes
-import "@splidejs/splide/css/skyblue";
 
 import "@splidejs/vue-splide/css/core";
 

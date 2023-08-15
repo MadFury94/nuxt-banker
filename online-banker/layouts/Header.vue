@@ -152,81 +152,83 @@
         >
       </div>
     </nav>
-    <Dialog
-      as="div"
-      class="lg:hidden"
-      @close="mobileMenuOpen = false"
-      :open="mobileMenuOpen"
-    >
-      <div class="fixed inset-0 z-10" />
-      <DialogPanel
-        class="fixed inset-y-0 right-0 z-10 flex w-full flex-col justify-between overflow-y-auto bg-white sm:max-w-sm sm:ring-1 sm:ring-gray-900/10"
+    <ClientOnly>
+      <Dialog
+        as="div"
+        class="lg:hidden"
+        @close="mobileMenuOpen = false"
+        :open="mobileMenuOpen"
       >
-        <div class="p-6">
-          <div class="flex items-center justify-between">
-            <a href="#" class="-m-1.5 p-1.5">
-              <span class="sr-only">Your Company</span>
-              <img
-                class="h-8 w-auto"
-                src="https://res.cloudinary.com/dqwfjxn8g/image/upload/v1691917489/Skillset_hql5da.png"
-                alt=""
-              />
-            </a>
-            <button
-              type="button"
-              class="-m-2.5 rounded-md p-2.5 text-gray-700"
-              @click="mobileMenuOpen = false"
-            >
-              <span class="sr-only">Close menu</span>
-              <XMarkIcon class="h-6 w-6" aria-hidden="true" />
-            </button>
-          </div>
-          <div class="mt-6 flow-root">
-            <div class="-my-6 divide-y divide-gray-500/10">
-              <div class="space-y-2 py-6">
-                <a
-                  v-for="item in fraudOptions"
-                  :key="item.name"
-                  :href="item.href"
-                  class="group -mx-3 flex items-center gap-x-6 rounded-lg p-3 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50"
-                >
-                  <div
-                    class="flex h-11 w-11 flex-none items-center justify-center rounded-lg bg-gray-50 group-hover:bg-white"
+        <div class="fixed inset-0 z-10"></div>
+        <DialogPanel
+          class="fixed inset-y-0 right-0 z-10 flex w-full flex-col justify-between overflow-y-auto bg-white sm:max-w-sm sm:ring-1 sm:ring-gray-900/10"
+        >
+          <div class="p-6">
+            <div class="flex items-center justify-between">
+              <a href="#" class="-m-1.5 p-1.5">
+                <span class="sr-only">Your Company</span>
+                <img
+                  class="h-8 w-auto"
+                  src="https://res.cloudinary.com/dqwfjxn8g/image/upload/v1691917489/Skillset_hql5da.png"
+                  alt=""
+                />
+              </a>
+              <button
+                type="button"
+                class="-m-2.5 rounded-md p-2.5 text-gray-700"
+                @click="mobileMenuOpen = false"
+              >
+                <span class="sr-only">Close menu</span>
+                <XMarkIcon class="h-6 w-6" aria-hidden="true" />
+              </button>
+            </div>
+            <div class="mt-6 flow-root">
+              <div class="-my-6 divide-y divide-gray-500/10">
+                <div class="space-y-2 py-6">
+                  <a
+                    v-for="item in fraudOptions"
+                    :key="item.name"
+                    :href="item.href"
+                    class="group -mx-3 flex items-center gap-x-6 rounded-lg p-3 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50"
                   >
-                    <component
-                      :is="item.icon"
-                      class="h-6 w-6 text-gray-600 group-hover:text-primary-600"
-                      aria-hidden="true"
-                    />
-                  </div>
-                  {{ item.name }}
-                </a>
-              </div>
-              <div class="space-y-2 py-6">
-                <a
-                  v-for="item in company"
-                  :key="item.name"
-                  :href="item.href"
-                  class="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50"
-                  >{{ item.name }}</a
-                >
+                    <div
+                      class="flex h-11 w-11 flex-none items-center justify-center rounded-lg bg-gray-50 group-hover:bg-white"
+                    >
+                      <component
+                        :is="item.icon"
+                        class="h-6 w-6 text-gray-600 group-hover:text-primary-600"
+                        aria-hidden="true"
+                      />
+                    </div>
+                    {{ item.name }}
+                  </a>
+                </div>
+                <div class="space-y-2 py-6">
+                  <a
+                    v-for="item in company"
+                    :key="item.name"
+                    :href="item.href"
+                    class="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50"
+                    >{{ item.name }}</a
+                  >
+                </div>
               </div>
             </div>
           </div>
-        </div>
-        <div
-          class="sticky bottom-0 grid grid-cols-2 divide-x divide-gray-900/5 bg-gray-50 text-center"
-        >
-          <a
-            v-for="item in callsToAction"
-            :key="item.name"
-            :href="item.href"
-            class="p-3 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-100"
-            >{{ item.name }}</a
+          <div
+            class="sticky bottom-0 grid grid-cols-2 divide-x divide-gray-900/5 bg-gray-50 text-center"
           >
-        </div>
-      </DialogPanel>
-    </Dialog>
+            <a
+              v-for="item in callsToAction"
+              :key="item.name"
+              :href="item.href"
+              class="p-3 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-100"
+              >{{ item.name }}</a
+            >
+          </div>
+        </DialogPanel>
+      </Dialog>
+    </ClientOnly>
   </header>
 </template>
 
