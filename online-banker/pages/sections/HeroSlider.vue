@@ -39,7 +39,7 @@
                     {{ item.description }}
                   </p>
                   <div class="flex gap-x-6 relative z-10">
-                    <ButtonComponent :title="item.button" link="index" />
+                    <ButtonComponent :title="item.button" :link="item.link" />
                   </div>
                 </div>
               </div>
@@ -72,6 +72,7 @@ type Sliders = {
   heading2: string;
   heading3: string;
   button: string;
+  link: string;
 
   image: string;
   description: string;
@@ -82,6 +83,7 @@ const sliders = ref<Sliders[]>([
     heading2: "It's Time to Trust",
     heading3: "Your Digital Transactions",
     button: "Learn more",
+    link: "index",
     image:
       "https://res.cloudinary.com/dqwfjxn8g/image/upload/v1692006182/cute-small-height-african-american-girl-with-dreadlocks-wear-coloured-yellow-dress-against-atm-with-credit-card-hand_by6uox.jpg",
     description:
@@ -92,6 +94,8 @@ const sliders = ref<Sliders[]>([
     heading2: "Stay Updated",
     heading3: "With Transaction Activities",
     button: "Discover more",
+    link: "index",
+
     image:
       "https://res.cloudinary.com/dqwfjxn8g/image/upload/v1692006319/african-american-research-agency-coworkers-meeting-about-startup-project-financial-status-business-people-desk-company-office-finance-department-talking-about-marketing-expenses_z9jia8.jpg",
     description:
@@ -102,6 +106,8 @@ const sliders = ref<Sliders[]>([
     heading2: "User-friendly",
     heading3: "Fraud Reporting System",
     button: "Start Reporting",
+    link: "report",
+
     image:
       "https://res.cloudinary.com/dqwfjxn8g/image/upload/v1692006299/multi-ethnic-entrepreneurs-stand-up-analyzing-financial-graph-brainstorming-ideas-partnership-project-working-company-presentation-startup-office-executives-managers-having-business-meeting_kzlxqq.jpg",
     description:

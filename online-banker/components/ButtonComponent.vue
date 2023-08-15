@@ -16,7 +16,7 @@ const props = defineProps({
   link: {
     type: String,
     default: "index",
-    required: false,
+    required: true,
   },
 
   icon: {
