@@ -1,0 +1,48 @@
+{
+  "posts": [
+    {
+      "id": 1,
+      "title": "json-server",
+      "author": "typicode"
+    }
+  ],
+  "comments": [
+    {
+      "id": 1,
+      "body": "some comment",
+      "postId": 1
+    }
+  ],
+  "profile": {
+    "name": "typicode"
+  },
+  "reports": [
+    {
+      "id": 556,
+      "name": "Reprehenderit dolor ",
+      "email": "wukiqu@mailinator.com",
+      "number": "+1 (553) 749-7511"
+    },
+    {
+      "id": 690,
+      "name": "Et mollit velit inci",
+      "email": "cigusen@mailinator.com",
+      "number": "+1 (912) 951-6459",
+      "reportType": "banking"
+    },
+    {
+      "id": 975,
+      "name": "Quia voluptates quo ",
+      "email": "ryva@mailinator.com",
+      "number": "+1 (915) 868-1844",
+      "reportType": "efcc"
+    },
+    {
+      "id": 91,
+      "name": "Cillum nihil rerum o",
+      "email": "caky@mailinator.com",
+      "number": "+1 (473) 655-8367",
+      "reportType": "learn"
+    }
+  ]
+}

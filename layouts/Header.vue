@@ -15,7 +15,7 @@
         </a>
       </div>
       <div class="flex gap-x-4 lg:hidden">
-        <ButtonComponent title="Report" link="report" /> 
+        <ButtonComponent title="Report" link="report" />
         <button
           type="button"
           class="-m-2.5 inline-flex items-center justify-center rounded-md p-2.5 text-gray-700"
@@ -148,6 +148,9 @@
         </Popover>
       </PopoverGroup>
       <div class="hidden lg:flex lg:flex-1 lg:justify-end">
+        <RouterLink class="bg-primary-200" :to="{ name: 'report' }"
+          >Report</RouterLink
+        >
         <a href="#" class="text-sm font-semibold leading-6 text-gray-900"
           >Log in <span aria-hidden="true">&rarr;</span></a
         >
@@ -234,7 +237,6 @@
 </template>
 
 <script setup>
-
 import {
 Dialog,
 DialogPanel,
@@ -253,7 +255,7 @@ ArrowPathIcon,
 Bars3Icon,
 HomeIcon,
 ShieldCheckIcon,
-XMarkIcon
+XMarkIcon,
 } from "@heroicons/vue/24/outline";
 import { ref } from "vue";
 import ButtonComponent from "../components/ButtonComponent.vue";

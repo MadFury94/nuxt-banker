@@ -12,8 +12,10 @@
               <h1 class="text-3xl text-white">{{ pageInfo?.title }}</h1>
               <h1 class="text-white text-base">{{ pageInfo?.description }}</h1>
             </template>
-
-            <h1 class="text-4xl text-white font-semibold">
+            <h1
+              v-if="!hideOnReporting"
+              class="text-4xl text-white font-semibold"
+            >
               {{ $route.meta.title }}
             </h1>
             <div class="h-4 mb-48">
@@ -36,12 +38,17 @@
 </template>
 
 <script setup lang="ts">
+import { BackwardIcon } from "@heroicons/vue/20/solid";
 import { reportMenu } from "../store/menu";
 import { PageDataType } from "../types/model";
 import Header from "./Header.vue";
-import { BackwardIcon } from "@heroicons/vue/20/solid";
 
 const $route = useRoute();
+
+
+const hideOnReporting = computed(() => {
+  return $route.name === "personal-info";
+});
 
 const pageData = reportMenu;
 
@@ -55,7 +62,6 @@ const pageInfo = computed(() => {
   return page ? page[id] : null;
 });
 
-console.log(reportMenu);
 </script>
 
 <style scoped>
