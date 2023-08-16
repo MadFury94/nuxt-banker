@@ -3,6 +3,7 @@
     <ul class="flex disc list-inside flex-col gap-y-7">
       <li class="" v-for="(item, index) in menuItems" :key="index">
         <NuxtLink
+          class="cursor-pointer"
           :to="{
             name: 'personal-info',
             params: {
@@ -10,7 +11,11 @@
             },
           }"
         >
-          <span class="text-3xl">{{ item.title }}</span>
+          <span class="text-3xl">
+            <i class="text-primary-500" :class="item.icon"></i>
+
+            {{ item.title }}</span
+          >
           <p>{{ item.description }}</p>
         </NuxtLink>
       </li>
@@ -31,42 +36,51 @@ definePageMeta({
 const menuItems = [
   {
     id: "banking",
-    title: "BANKING/ FINANCE CONSULTATION",
-    subDescription: "",
-
-    description: "report banking issues",
+    title: "Banking/Finance Consultation",
+    subDescription: "Expert advice for banking needs.",
+    description:
+      "Discuss and resolve complex banking and financial issues with our experts.",
+    icon: "fa-solid fa-building-columns",
   },
   {
     id: "learn",
-    title: "LEARN FINANCIAL LITERACY ",
-    subDescription: "",
-    description: "leanr about oney",
+    title: "Learn Financial Literacy",
+    subDescription: "Empower your financial decisions.",
+    description:
+      "Expand your knowledge about money management, investments, and savings.",
+    icon: "fa-solid fa-graduation-cap",
   },
   {
     id: "efcc",
-    title: "CONTACT EFCC ",
-    subDescription: "",
-    description: "contact the authorities",
+    title: "Contact EFCC",
+    subDescription: "Report fraudulent activities.",
+    description:
+      "Reach out to the Economic and Financial Crimes Commission for financial misconduct.",
+    icon: "fa-solid fa-building-columns",
   },
   {
     id: "account",
-    subDescription: "",
     title: "Bank Account Opening",
-    description: "contact the authorities",
+    subDescription: "Start your financial journey.",
+    description:
+      "Get assistance in opening a new bank account tailored to your needs.",
+    icon: "fa-solid fa-file-invoice-dollar",
   },
-
   {
     id: "complaints",
-    subDescription: "",
-
     title: "General Complaints",
-    description: "contact the authorities",
+    subDescription: "Address your banking concerns.",
+    description:
+      "Submit any banking-related concerns or issues you might be facing.",
+    icon: "fa-solid fa-circle-exclamation",
   },
   {
     id: "sme",
     title: "SME Consultation",
-    subDescription: "",
-    description: "contact the authorities",
+    subDescription: "Boost your business banking.",
+    description:
+      "Get specialized banking advice and solutions for your small or medium-sized enterprise.",
+    icon: "fa-solid fa-business-time",
   },
 ];
 

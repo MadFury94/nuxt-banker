@@ -24,8 +24,13 @@
               </h1>
             </div>
 
-            <button class="text-white" @click="$router.go(-1)">
-              <BackwardIcon class="h-10 text-white"> </BackwardIcon>
+            <button
+              class="text-white flex items-center gap-x-2 font-bold text-2xl"
+              @click="$router.go(-1)"
+            >
+              <!-- <i class="fa-regular fa-left-long"></i> -->
+              <i class="fa-solid fa-arrow-left"></i>
+              <h1>Return</h1>
             </button>
           </div>
         </div>
@@ -45,7 +50,6 @@ import Header from "./Header.vue";
 
 const $route = useRoute();
 
-
 const hideOnReporting = computed(() => {
   return $route.name === "personal-info";
 });
@@ -61,7 +65,6 @@ const pageInfo = computed(() => {
   // Return the found page data or a default value
   return page ? page[id] : null;
 });
-
 </script>
 
 <style scoped>

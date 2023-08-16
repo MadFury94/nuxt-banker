@@ -3,6 +3,7 @@
 export default defineNuxtConfig({
   css: [
     "~/assets/css/main.css",
+    "@fortawesome/fontawesome-svg-core/styles.css",
   ],
 
   app: {
@@ -10,11 +11,11 @@ export default defineNuxtConfig({
     // layoutTransition: { name: "layout", mode: "out-in" },
     head:{
       link:[
-      //   {
-      //   rel: "stylesheet",
-      //   href:"/assets/fa/css/all.min.css"
+        {
+        rel: "stylesheet",
+        href:"/assets/fa/css/all.min.css"
 
-      // },
+      },
 
       {
         rel:"stylesheet",
@@ -32,13 +33,9 @@ export default defineNuxtConfig({
     },
   },
 
-  modules: [
-    'nuxt-headlessui'
-  ],
- 
+  modules: [],
 
   devtools: {
     enabled: true,
   },
 });
-

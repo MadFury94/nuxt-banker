@@ -148,12 +148,7 @@
         </Popover>
       </PopoverGroup>
       <div class="hidden lg:flex lg:flex-1 lg:justify-end">
-        <RouterLink class="bg-primary-200" :to="{ name: 'report' }"
-          >Report</RouterLink
-        >
-        <a href="#" class="text-sm font-semibold leading-6 text-gray-900"
-          >Log in <span aria-hidden="true">&rarr;</span></a
-        >
+        <RouterLink class="btn" :to="{ name: 'report' }">Report</RouterLink>
       </div>
     </nav>
     <ClientOnly>
@@ -238,24 +233,24 @@
 
 <script setup>
 import {
-Dialog,
-DialogPanel,
-Popover,
-PopoverButton,
-PopoverGroup,
-PopoverPanel,
+  Dialog,
+  DialogPanel,
+  Popover,
+  PopoverButton,
+  PopoverGroup,
+  PopoverPanel,
 } from "@headlessui/vue";
 import {
-ChevronDownIcon,
-PhoneIcon,
-PlayCircleIcon,
+  ChevronDownIcon,
+  PhoneIcon,
+  PlayCircleIcon,
 } from "@heroicons/vue/20/solid";
 import {
-ArrowPathIcon,
-Bars3Icon,
-HomeIcon,
-ShieldCheckIcon,
-XMarkIcon,
+  ArrowPathIcon,
+  Bars3Icon,
+  HomeIcon,
+  ShieldCheckIcon,
+  XMarkIcon,
 } from "@heroicons/vue/24/outline";
 import { ref } from "vue";
 import ButtonComponent from "../components/ButtonComponent.vue";
