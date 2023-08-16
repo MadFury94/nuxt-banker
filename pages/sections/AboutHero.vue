@@ -41,18 +41,19 @@
       >
         <div class="lg:pr-4">
           <div class="lg:max-w-lg">
-            <p class="text-base font-semibold leading-7 text-indigo-600">
-              Deploy faster
+            <p class="text-base font-semibold leading-7 text-primary-600">
+              Empowering Businesses
             </p>
             <h1
               class="mt-2 text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl"
             >
-              A better workflow
+              Welcome to Your Online Banker
             </h1>
             <p class="mt-6 text-xl leading-8 text-gray-700">
-              Aliquet nec orci mattis amet quisque ullamcorper neque, nibh sem.
-              At arcu, sit dui mi, nibh dui, diam eget aliquam. Quisque id at
-              vitae feugiat egestas.
+              Your definitive source for banking knowledge and protection
+              against fraud. We're dedicated to ensuring small and medium-scale
+              businesses can confidently navigate the banking world, fortified
+              with essential information.
             </p>
           </div>
         </div>
@@ -62,7 +63,7 @@
       >
         <img
           class="w-[48rem] max-w-none rounded-xl bg-gray-900 shadow-xl ring-1 ring-gray-400/10 sm:w-[57rem]"
-          src="https://tailwindui.com/img/component-images/dark-project-app-screenshot.png"
+          src="https://res.cloudinary.com/dqwfjxn8g/image/upload/v1692006319/african-american-research-agency-coworkers-meeting-about-startup-project-financial-status-business-people-desk-company-office-finance-department-talking-about-marketing-expenses_z9jia8.jpg"
           alt=""
         />
       </div>
@@ -72,22 +73,21 @@
         <div class="lg:pr-4">
           <div class="max-w-xl text-base leading-7 text-gray-700 lg:max-w-lg">
             <p>
-              Faucibus commodo massa rhoncus, volutpat. Dignissim sed eget risus
-              enim. Mattis mauris semper sed amet vitae sed turpis id. Id dolor
-              praesent donec est. Odio penatibus risus viverra tellus varius sit
-              neque erat velit. Faucibus commodo massa rhoncus, volutpat.
-              Dignissim sed eget risus enim. Mattis mauris semper sed amet vitae
-              sed turpis id.
+              We pride ourselves on our extensive experience across Nigeria's
+              banking sector, from commercial to microfinance domains. It's more
+              than just banking for us—it's about ensuring our community members
+              can securely conduct their transactions, safeguarded from the
+              threats of fraud.
             </p>
             <ul role="list" class="mt-8 space-y-8 text-gray-600">
               <li class="flex gap-x-3">
                 <CloudArrowUpIcon
-                  class="mt-1 h-5 w-5 flex-none text-indigo-600"
+                  class="mt-1 h-5 w-5 flex-none text-primary-600"
                   aria-hidden="true"
                 />
                 <span
                   ><strong class="font-semibold text-gray-900"
-                    >Push to deploy.</strong
+                    >Reporting made Easy.</strong
                   >
                   Lorem ipsum, dolor sit amet consectetur adipisicing elit.
                   Maiores impedit perferendis suscipit eaque, iste dolor
@@ -96,49 +96,32 @@
               </li>
               <li class="flex gap-x-3">
                 <LockClosedIcon
-                  class="mt-1 h-5 w-5 flex-none text-indigo-600"
+                  class="mt-1 h-5 w-5 flex-none text-primary-600"
                   aria-hidden="true"
                 />
                 <span
                   ><strong class="font-semibold text-gray-900"
-                    >SSL certificates.</strong
+                    >Learning.</strong
                   >
-                  Anim aute id magna aliqua ad ad non deserunt sunt. Qui irure
-                  qui lorem cupidatat commodo.</span
+
+                  Knowledge is Power</span
                 >
               </li>
               <li class="flex gap-x-3">
                 <ServerIcon
-                  class="mt-1 h-5 w-5 flex-none text-indigo-600"
+                  class="mt-1 h-5 w-5 flex-none text-primary-600"
                   aria-hidden="true"
                 />
                 <span
                   ><strong class="font-semibold text-gray-900"
-                    >Database backups.</strong
+                    >Commuinty</strong
                   >
-                  Ac tincidunt sapien vehicula erat auctor pellentesque rhoncus.
-                  Et magna sit morbi lobortis.</span
+                  Join our community and connect with like-minded individuals to
+                  share experiences and tips for staying safe while
+                  banking.</span
                 >
               </li>
             </ul>
-            <p class="mt-8">
-              Et vitae blandit facilisi magna lacus commodo. Vitae sapien duis
-              odio id et. Id blandit molestie auctor fermentum dignissim. Lacus
-              diam tincidunt ac cursus in vel. Mauris varius vulputate et
-              ultrices hac adipiscing egestas. Iaculis convallis ac tempor et
-              ut. Ac lorem vel integer orci.
-            </p>
-            <h2 class="mt-16 text-2xl font-bold tracking-tight text-gray-900">
-              No server? No problem.
-            </h2>
-            <p class="mt-6">
-              Id orci tellus laoreet id ac. Dolor, aenean leo, ac etiam
-              consequat in. Convallis arcu ipsum urna nibh. Pharetra, euismod
-              vitae interdum mauris enim, consequat vulputate nibh. Maecenas
-              pellentesque id sed tellus mauris, ultrices mauris. Tincidunt enim
-              cursus ridiculus mi. Pellentesque nam sed nullam sed diam turpis
-              ipsum eu a sed convallis diam.
-            </p>
           </div>
         </div>
       </div>
