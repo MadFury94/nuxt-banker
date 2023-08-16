@@ -33,12 +33,36 @@
             />
           </div>
 
-          <button
-            @click="submitForm"
-            class="bg-primary-500 my-4 rounded-md p-2"
-          >
-            Submit
-          </button>
+          <div class="flex items-center gap-x-10">
+            <button
+              @click="submitForm"
+              class="bg-primary-500 my-4 rounded-md p-2"
+            >
+              Submit
+            </button>
+
+            <div class="relative flex items-center">
+              <div class="flex h-6 items-center">
+                <input
+                  v-model="form.save"
+                  id="comments"
+                  aria-describedby="comments-description"
+                  name="comments"
+                  type="checkbox"
+                  class="h-4 w-4 rounded border-gray-300 text-indigo-600 focus:ring-indigo-600"
+                />
+              </div>
+              <div class="ml-3 text-sm leading-6">
+                <label for="comments" class="font-medium text-gray-900"
+                  >Save my Information</label
+                >
+                <p id="comments-description" class="text-gray-500">
+                  Your information only saved on this device for the next time u
+                  want to make a report
+                </p>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </div>
@@ -51,10 +75,16 @@ import { reportMenu } from "../../store/menu";
 import { PageDataType } from "../../types/model";
 import { getRandomNumber } from "../../utils/functions";
 
-const form = reactive({
+const form = reactive<{
+  name: string;
+  email: string;
+  number: string;
+  save: boolean;
+}>({
   name: "",
   email: "",
   number: "",
+  save: false,
 });
 
 definePageMeta({
@@ -83,7 +113,30 @@ const pageParams = computed(() => {
 
 const pageData = reportMenu;
 
+function saveToLocalStorage() {
+  localStorage.setItem("form", JSON.stringify(form));
+}
+
+function getLocalStorage() {
+  const data = localStorage.getItem("form");
+  if (data) {
+    const parsedData = JSON.parse(data);
+    form.name = parsedData.name;
+    form.email = parsedData.email;
+    form.number = parsedData.number;
+    form.save = parsedData.save;
+  }
+}
+
+onMounted(() => {
+  getLocalStorage();
+});
+
 function submitForm() {
+  if (form.save) {
+    saveToLocalStorage();
+  }
+
   axios
     .post("http://localhost:3000/reports", {
       id: getRandomNumber(1, 1000),
