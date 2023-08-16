@@ -5,34 +5,19 @@
     </h1>
     <h1 class="font-semibold my-10">Personal Information</h1>
     <div>
-      {{ form }}
+      <div v-for="(item, index) in pageInfo?.form.personal">
+        <div>
+          <label class="capitalize">{{ item.label }}:</label>
+
+          <input
+            v-model="form[item.label]"
+            class="border-2 border-gray-500 rounded-sm py-1 text-2xl w-full"
+            :type="item.type"
+          />
+        </div>
+      </div>
       <div class="flex justify-center">
         <div class="w-full">
-          <div>
-            <label>Name:</label>
-            <input
-              v-model="form.name"
-              class="border-2 border-gray-500 rounded-sm py-1 text-2xl w-full"
-              type="text"
-            />
-          </div>
-          <div>
-            <label>Email:</label>
-            <input
-              v-model="form.email"
-              class="border-2 border-gray-500 rounded-sm py-1 text-2xl w-full"
-              type="email"
-            />
-          </div>
-          <div>
-            <label>Number:</label>
-            <input
-              v-model="form.number"
-              class="border-2 border-gray-500 rounded-sm py-1 text-2xl w-full"
-              type="tel"
-            />
-          </div>
-
           <div class="flex items-center gap-x-10">
             <button
               @click="submitForm"

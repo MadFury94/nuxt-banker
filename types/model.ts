@@ -34,7 +34,12 @@ type PageKeys = "learn" | "banking" | "efcc"; // Add more keys as needed
 type PageStructure = {
   title: string;
   description: string;
-  image:string;
+  form:{
+    personal: {
+      label: string;
+      type: string;
+    }[];
+  }
 };
 
 export type PageDataType = {
