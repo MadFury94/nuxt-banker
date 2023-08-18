@@ -24,11 +24,8 @@
                   <dt
                     class="flex items-center gap-x-3 text-base font-semibold leading-7 text-gray-700"
                   >
-                    <component
-                      :is="feature.icon"
-                      class="h-5 w-5 flex-none text-primary-400"
-                      aria-hidden="true"
-                    />
+                    <i :class="feature.icon" class="text-primary-500"></i>
+
                     {{ feature.name }}
                   </dt>
                   <dd
@@ -64,12 +61,6 @@
 import { Splide, SplideSlide, SplideTrack } from "@splidejs/vue-splide";
 import "@splidejs/vue-splide/css";
 import { ref } from "vue";
-import {
-  ShieldExclamationIcon,
-  BanknotesIcon,
-  UserIcon,
-  BookOpenIcon,
-} from "@heroicons/vue/20/solid";
 
 // or other themes
 
@@ -88,49 +79,49 @@ const features: Features[] = [
     description:
       "Get expert advice on managing your finances and banking concerns. Navigate the banking world with confidence.",
     link: "#",
-    icon: BanknotesIcon,
+    icon: "fa-sharp fa-solid fa-building-columns",
   },
   {
     name: "EFCC Collaboration",
     description:
       "In partnership with the EFCC, we ensure thorough investigations and prompt resolutions to fraud cases.",
     link: "#",
-    icon: UserIcon,
+    icon: "fa-solid fa-user",
   },
   {
     name: "Financial Literacy",
     description:
       "Equip yourself with knowledge. Learn the essentials of finance and banking to protect yourself from fraud.",
     link: "#",
-    icon: BookOpenIcon,
+    icon: "fa-duotone fa-books",
   },
   {
     name: "Fraud Reporting",
     description:
       "Report any suspicious activity immediately. Your safety is our priority. We act fast.",
     link: "#",
-    icon: ShieldExclamationIcon,
+    icon: "fa-duotone fa-shield-check",
   },
   {
     name: "General Complaint",
     description:
       "Have concerns about your banking services? File a complaint and we'll help address it.",
     link: "#",
-    icon: ShieldExclamationIcon,
+    icon: "fa-solid fa-circle-exclamation",
   },
   {
     name: "Opening Bank Account",
     description:
       "Get guidance on opening a bank account that suits your needs. Start your financial journey with us.",
     link: "#",
-    icon: ShieldExclamationIcon,
+    icon: "fa-solid fa-circle-exclamation",
   },
   {
     name: "SME Support",
     description:
       "Specialized support for Small and Medium Enterprises. Get insights tailored for your business.",
     link: "#",
-    icon: ShieldExclamationIcon,
+    icon: "fa-solid fa-circle-exclamation",
   },
 ];
 const options = {

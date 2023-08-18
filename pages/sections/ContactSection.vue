@@ -19,7 +19,7 @@
           <div class="mt-9">
             <div class="flex">
               <div class="flex-shrink-0">
-                <PhoneIcon class="h-6 w-6 text-gray-400" aria-hidden="true" />
+                <i class="fa-solid fa-phone text-gray-400"></i>
               </div>
               <div class="ml-3 text-base text-gray-500">
                 <p>+1 (555) 123 4567</p>
@@ -28,10 +28,7 @@
             </div>
             <div class="mt-6 flex">
               <div class="flex-shrink-0">
-                <EnvelopeIcon
-                  class="h-6 w-6 text-gray-400"
-                  aria-hidden="true"
-                />
+                <i class="fa-solid fa-envelope text-gray-400"></i>
               </div>
               <div class="ml-3 text-base text-gray-500">
                 <p>fraudreport@youronlinebanker.com</p>
@@ -54,7 +51,7 @@
           <div class="mt-9">
             <div class="flex">
               <div class="flex-shrink-0">
-                <PhoneIcon class="h-6 w-6 text-gray-400" aria-hidden="true" />
+                <i class="fa-solid fa-phone text-gray-400"></i>
               </div>
               <div class="ml-3 text-base text-gray-500">
                 <p>+1 (555) 123 4567</p>
@@ -63,10 +60,7 @@
             </div>
             <div class="mt-6 flex">
               <div class="flex-shrink-0">
-                <EnvelopeIcon
-                  class="h-6 w-6 text-gray-400"
-                  aria-hidden="true"
-                />
+                <i class="fa-solid fa-envelope text-gray-400"></i>
               </div>
               <div class="ml-3 text-base text-gray-500">
                 <p>support@youronlinebanker.com</p>
@@ -79,6 +73,4 @@
   </div>
 </template>
 
-<script setup>
-import { EnvelopeIcon, PhoneIcon } from "@heroicons/vue/24/outline";
-</script>
+<script setup></script>

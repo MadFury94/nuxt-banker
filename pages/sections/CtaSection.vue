@@ -54,29 +54,27 @@
 </template>
 
 <script setup lang="ts">
-import { ShieldCheckIcon, InboxIcon, EyeIcon } from "@heroicons/vue/20/solid";
-
 const features = [
   {
     name: "Real-Time Alerts",
     description:
       "Stay ahead with instant notifications on any suspicious activities or breaches in your account. Security at your fingertips.",
     href: "#",
-    icon: ShieldCheckIcon,
+    icon: "fa-duotone fa-shield-check",
   },
   {
     name: "24/7 Support",
     description:
       "Our dedicated team is available round the clock. If you suspect any fraudulent activity, we're here to assist immediately.",
     href: "#",
-    icon: InboxIcon,
+    icon: "fa-solid fa-envelope",
   },
   {
     name: "Transparent Tracking",
     description:
       "Track your fraud reports with our transparent system. Stay updated with the status and outcomes of your reports.",
     href: "#",
-    icon: EyeIcon,
+    icon: "fa-solid fa-eye",
   },
 ];
 </script>

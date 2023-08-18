@@ -3,16 +3,16 @@
     <div class="mx-auto max-w-7xl px-6 lg:px-8">
       <div class="mx-auto max-w-2xl lg:text-center">
         <h2 class="text-base font-semibold leading-7 text-primary-600">
-          Shine and Protect
+          Safeguard and Assist
         </h2>
         <p
           class="mt-2 text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl"
         >
-          Sprynx Multi - Superior Car Wash & Detailing
+          Online Banker - Your Shield Against Online Financial Frauds
         </p>
         <p class="mt-6 text-lg leading-8 text-gray-600">
-          Experience unmatched care for your vehicle. Every swirl, every
-          sparkle, speaks of our dedication.
+          Helping individuals recover and secure their assets. Every report,
+          every intervention, is our commitment to you.
         </p>
       </div>
       <div class="mx-auto mt-16 max-w-2xl sm:mt-20 lg:mt-24 lg:max-w-4xl">
@@ -26,13 +26,9 @@
           >
             <dt class="text-base font-semibold leading-7 text-gray-900">
               <div
-                class="absolute left-0 top-0 flex h-10 w-10 items-center justify-center rounded-lg bg-secondary-600"
+                class="absolute left-0 top-0 flex h-10 w-10 items-center justify-center rounded-lg bg-primary-600"
               >
-                <component
-                  :is="feature.icon"
-                  class="h-6 w-6 text-white"
-                  aria-hidden="true"
-                />
+                <i :class="feature.icon" class="text-white"></i>
               </div>
               {{ feature.name }}
             </dt>
@@ -47,37 +43,30 @@
 </template>
 
 <script setup>
-import {
-  ShieldCheckIcon,
-  SparklesIcon,
-  HandRaisedIcon,
-  TruckIcon,
-} from "@heroicons/vue/24/outline";
-
 const features = [
   {
-    name: "Hand Wash",
+    name: "Fraud Reporting",
     description:
-      "Gentle care with a meticulous touch. Our experts hand wash your car ensuring every corner shines.",
-    icon: HandRaisedIcon,
+      "Easily report any fraudulent activities. Our dedicated team will swiftly act on your reports.",
+    icon: "fa-thin fa-file-chart-column",
   },
   {
-    name: "Expert Detailing",
+    name: "Victim Assistance",
     description:
-      "Precision detailing to make your car look as good as new. Experience brilliance inside out.",
-    icon: TruckIcon,
+      "Have you been scammed? We're here to guide and help you recover and secure your assets.",
+    icon: "fa-sharp fa-regular fa-handshake-angle",
   },
   {
-    name: "Protection Seal",
+    name: "Security Awareness",
     description:
-      "Guard your vehicle against the elements. Our protection seal ensures longevity and maintains the shine.",
-    icon: ShieldCheckIcon,
+      "Stay informed with the latest trends in online scams and preventive measures through our resources.",
+    icon: "fa-duotone fa-lock",
   },
   {
-    name: "Eco-Friendly Products",
+    name: "24/7 Support",
     description:
-      "Committed to the environment. We use eco-friendly products ensuring the best care for your vehicle and nature.",
-    icon: SparklesIcon,
+      "Reach out to our expert team any time. We are always here to support and assist you.",
+    icon: "fa-brands fa-rocketchat",
   },
 ];
 </script>
