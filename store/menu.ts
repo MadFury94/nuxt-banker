@@ -22,6 +22,23 @@ export const reportMenu = [
               type: "tel",
             },
           ],
+          topic:[
+            {
+              label:"topic",
+              type:"radio",
+              key:"topic",
+            },
+            {
+              label:"topic",
+              type:"radio",
+              key:"topic",
+            },
+            {
+              label:"topic",
+              type:"radio",
+              key:"topic",
+            },
+          ],
         },
       },
  

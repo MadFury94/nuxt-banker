@@ -257,12 +257,6 @@ import ButtonComponent from "../components/ButtonComponent.vue";
 
 const fraudOptions = [
   {
-    name: "Home",
-    description: "Homepage",
-    href: "#",
-    icon: HomeIcon,
-  },
-  {
     name: "Phishing Attacks",
     description: "Report phishing emails, messages or websites.",
     href: "#",
@@ -286,6 +280,11 @@ const callsToAction = [
   { name: "Contact Support", href: "#", icon: PhoneIcon },
 ];
 const company = [
+  {
+    name: "About",
+    href: { name: "about" },
+    description: "About Online Banker",
+  },
   {
     name: "Resources",
     href: "#",
