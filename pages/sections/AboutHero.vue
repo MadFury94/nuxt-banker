@@ -81,24 +81,8 @@
             </p>
             <ul role="list" class="mt-8 space-y-8 text-gray-600">
               <li class="flex gap-x-3">
-                <CloudArrowUpIcon
-                  class="mt-1 h-5 w-5 flex-none text-primary-600"
-                  aria-hidden="true"
-                />
-                <span
-                  ><strong class="font-semibold text-gray-900"
-                    >Reporting made Easy.</strong
-                  >
-                  Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-                  Maiores impedit perferendis suscipit eaque, iste dolor
-                  cupiditate blanditiis ratione.</span
-                >
-              </li>
-              <li class="flex gap-x-3">
-                <LockClosedIcon
-                  class="mt-1 h-5 w-5 flex-none text-primary-600"
-                  aria-hidden="true"
-                />
+                <i class="fa-solid fa-lock flex-none text-primary-600 mt-1"></i>
+
                 <span
                   ><strong class="font-semibold text-gray-900"
                     >Learning.</strong
@@ -108,10 +92,8 @@
                 >
               </li>
               <li class="flex gap-x-3">
-                <ServerIcon
-                  class="mt-1 h-5 w-5 flex-none text-primary-600"
-                  aria-hidden="true"
-                />
+                <i class="fa-solid fa-lock flex-none text-primary-600 mt-1"></i>
+
                 <span
                   ><strong class="font-semibold text-gray-900"
                     >Commuinty</strong
@@ -129,10 +111,4 @@
   </div>
 </template>
 
-<script setup>
-import {
-  CloudArrowUpIcon,
-  LockClosedIcon,
-  ServerIcon,
-} from "@heroicons/vue/20/solid";
-</script>
+<script setup></script>

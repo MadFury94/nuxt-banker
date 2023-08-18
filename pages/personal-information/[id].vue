@@ -4,15 +4,14 @@
       {{ pageInfo?.title }}
     </h1>
     <h1 class="font-semibold my-10">Personal Information</h1>
-    <div  >
-   
+    <div>
       <div v-for="(item, index) in pageInfo?.form?.personal">
         <div>
           <label class="capitalize">{{ item.label }}:</label>
 
           <input
             v-model="form[item.label]"
-            class="border-2 border-gray-500 rounded-sm py-1 text-2xl w-full"
+            class="inputbox"
             :type="item.type"
           />
         </div>
@@ -90,7 +89,7 @@ const pageInfo = computed(() => {
   const page = pageData.find((page: any) => page[id as string]);
 
   // Return the found page data or a default value
-  return page ? page[id] as any : null;
+  return page ? (page[id] as any) : null;
 });
 
 const pageParams = computed(() => {

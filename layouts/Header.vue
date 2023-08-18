@@ -22,7 +22,7 @@
           @click="mobileMenuOpen = true"
         >
           <span class="sr-only">Open main menu</span>
-          <Bars3Icon class="h-6 w-6" aria-hidden="true" />
+          <i class="fa-sharp fa-regular fa-bars-staggered"></i>
         </button>
       </div>
       <PopoverGroup class="hidden lg:flex lg:gap-x-12">
@@ -31,10 +31,7 @@
             class="flex items-center gap-x-1 text-sm font-semibold leading-6 text-gray-900"
           >
             Home
-            <ChevronDownIcon
-              class="h-5 w-5 flex-none text-gray-400"
-              aria-hidden="true"
-            />
+            <i class="fa-solid fa-chevron-down text-gray-900"></i>
           </PopoverButton>
 
           <transition
@@ -57,11 +54,10 @@
                   <div
                     class="mt-1 flex h-11 w-11 flex-none items-center justify-center rounded-lg bg-gray-50 group-hover:bg-white"
                   >
-                    <component
-                      :is="item.icon"
-                      class="h-6 w-6 text-gray-600 group-hover:text-primary-600"
-                      aria-hidden="true"
-                    />
+                    <i
+                      :class="item.icon"
+                      class="text-gray-600 group-hover:text-primary-600"
+                    ></i>
                   </div>
                   <div class="flex-auto">
                     <a
@@ -84,11 +80,12 @@
                   :href="item.href"
                   class="flex items-center justify-center gap-x-2.5 p-3 text-sm font-semibold leading-6 text-gray-900 hover:bg-gray-100"
                 >
-                  <component
-                    :is="item.icon"
+                  <i
+                    :class="item.icon"
                     class="h-5 w-5 flex-none text-gray-400"
                     aria-hidden="true"
-                  />
+                  ></i>
+
                   {{ item.name }}
                 </a>
               </div>
@@ -110,10 +107,7 @@
             class="flex items-center gap-x-1 text-sm font-semibold leading-6 text-gray-900"
           >
             Company
-            <ChevronDownIcon
-              class="h-5 w-5 flex-none text-gray-400"
-              aria-hidden="true"
-            />
+            <i class="fa-solid fa-chevron-down text-gray-900"></i>
           </PopoverButton>
 
           <transition
@@ -172,13 +166,14 @@
                   alt=""
                 />
               </a>
+
               <button
                 type="button"
                 class="-m-2.5 rounded-md p-2.5 text-gray-700"
                 @click="mobileMenuOpen = false"
               >
-                <span class="sr-only">Close menu</span>
-                <XMarkIcon class="h-6 w-6" aria-hidden="true" />
+                <span>Close menu</span>
+                <i class="fa-solid fa-rectangle-xmark"></i>
               </button>
             </div>
             <div class="mt-6 flow-root">
@@ -193,11 +188,12 @@
                     <div
                       class="flex h-11 w-11 flex-none items-center justify-center rounded-lg bg-gray-50 group-hover:bg-white"
                     >
-                      <component
-                        :is="item.icon"
+                      <i
+                        :class="item.icon"
                         class="h-6 w-6 text-gray-600 group-hover:text-primary-600"
                         aria-hidden="true"
-                      />
+                      >
+                      </i>
                     </div>
                     {{ item.name }}
                   </a>
@@ -240,18 +236,6 @@ import {
   PopoverGroup,
   PopoverPanel,
 } from "@headlessui/vue";
-import {
-  ChevronDownIcon,
-  PhoneIcon,
-  PlayCircleIcon,
-} from "@heroicons/vue/20/solid";
-import {
-  ArrowPathIcon,
-  Bars3Icon,
-  HomeIcon,
-  ShieldCheckIcon,
-  XMarkIcon,
-} from "@heroicons/vue/24/outline";
 import { ref } from "vue";
 import ButtonComponent from "../components/ButtonComponent.vue";
 
@@ -260,24 +244,28 @@ const fraudOptions = [
     name: "Phishing Attacks",
     description: "Report phishing emails, messages or websites.",
     href: "#",
-    icon: ShieldCheckIcon,
+    icon: "fa-light fa-shield-check",
   },
   {
     name: "Unusual Transactions",
     description: "Report any suspicious transactions on your account.",
     href: "#",
-    icon: ArrowPathIcon,
+    icon: "fa-duotone fa-file-chart-column",
   },
   {
     name: "Identity Theft",
     description: "Believe someone is using your identity? Report here.",
     href: "#",
-    icon: HomeIcon,
+    icon: "fa-solid fa-face-viewfinder",
   },
 ];
 const callsToAction = [
-  { name: "Submit a Report", href: "#", icon: PlayCircleIcon },
-  { name: "Contact Support", href: "#", icon: PhoneIcon },
+  {
+    name: "Submit a Report",
+    href: "#",
+    icon: "fa-duotone fa-file-chart-column",
+  },
+  { name: "Contact Support", href: "#", icon: "fa-solid fa-phone" },
 ];
 const company = [
   {

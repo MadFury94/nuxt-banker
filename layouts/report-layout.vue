@@ -4,7 +4,7 @@
     <div class="grid lg:grid-cols-5 relative">
       <div
         :style="`background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.7)), url('${$route.meta.image}');`"
-        class="col-span-2 h-8 lg:h-screen bg-cover bg-center"
+        class="col-span-2 h-8 lg:h-screen bg-cover bg-center hidden lg:block"
       >
         <div class="flex justify-center items-center lg:h-screen">
           <div class="p-8">
@@ -24,7 +24,7 @@
               </h1>
             </div>
             <div class="flex gap-x-96 px-12 items-center absolute bottom-28">
-              <div>
+              <div v-if="!hideOnReporting">
                 <button
                   class="text-white flex items-center gap-x-2 font-bold text-2xl"
                   @click="$router.go(-1)"
@@ -52,7 +52,6 @@
 </template>
 
 <script setup lang="ts">
-import { BackwardIcon } from "@heroicons/vue/20/solid";
 import { reportMenu } from "../store/menu";
 import { PageDataType } from "../types/model";
 import Header from "./Header.vue";
