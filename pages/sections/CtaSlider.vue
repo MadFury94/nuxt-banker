@@ -1,11 +1,8 @@
 <template>
   <div>
     <div class="mx-auto max-w-2xl lg:text-center">
-      <h2 class="text-base font-semibold leading-7 text-primary-400">
-        Secure Banking
-      </h2>
       <p
-        class="mt-2 text-3xl font-bold tracking-tight text-gray-800 sm:text-4xl"
+        class="mt-10 text-3xl font-bold tracking-tight text-gray-800 sm:text-4xl"
       >
         Everything you need to report & track online fraud
       </p>

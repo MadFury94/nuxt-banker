@@ -56,6 +56,17 @@
               with essential information.
             </p>
           </div>
+          <div
+            class="max-w-xl pb-24 text-base leading-7 text-gray-700 lg:max-w-lg"
+          >
+            <p>
+              We pride ourselves on our extensive experience across Nigeria's
+              banking sector, from commercial to microfinance domains. It's more
+              than just banking for us—it's about ensuring our community members
+              can securely conduct their transactions, safeguarded from the
+              threats of fraud.
+            </p>
+          </div>
         </div>
       </div>
       <div
@@ -70,42 +81,7 @@
       <div
         class="lg:col-span-2 lg:col-start-1 lg:row-start-2 lg:mx-auto lg:grid lg:w-full lg:max-w-7xl lg:grid-cols-2 lg:gap-x-8 lg:px-8"
       >
-        <div class="lg:pr-4">
-          <div class="max-w-xl text-base leading-7 text-gray-700 lg:max-w-lg">
-            <p>
-              We pride ourselves on our extensive experience across Nigeria's
-              banking sector, from commercial to microfinance domains. It's more
-              than just banking for us—it's about ensuring our community members
-              can securely conduct their transactions, safeguarded from the
-              threats of fraud.
-            </p>
-            <ul role="list" class="mt-8 space-y-8 text-gray-600">
-              <li class="flex gap-x-3">
-                <i class="fa-solid fa-lock flex-none text-primary-600 mt-1"></i>
-
-                <span
-                  ><strong class="font-semibold text-gray-900"
-                    >Learning.</strong
-                  >
-
-                  Knowledge is Power</span
-                >
-              </li>
-              <li class="flex gap-x-3">
-                <i class="fa-solid fa-lock flex-none text-primary-600 mt-1"></i>
-
-                <span
-                  ><strong class="font-semibold text-gray-900"
-                    >Commuinty</strong
-                  >
-                  Join our community and connect with like-minded individuals to
-                  share experiences and tips for staying safe while
-                  banking.</span
-                >
-              </li>
-            </ul>
-          </div>
-        </div>
+        <div class="lg:pr-4"></div>
       </div>
     </div>
   </div>
