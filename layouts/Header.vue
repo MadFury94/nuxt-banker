@@ -264,8 +264,8 @@ const company = [
     description: "About Online Banker",
   },
   {
-    name: "Resources",
-    route: "/report",
+    name: "Privacy & Terms and Conditions",
+    route: "/privacy",
     description:
       "Guides, articles, and tools to better understand banking security",
   },
