@@ -52,6 +52,7 @@
 
 <script setup lang="ts">
 import axios from "axios";
+import { serverUrl } from "../../app.config";
 import { reportMenu } from "../../store/menu";
 import { PageDataType } from "../../types/model";
 

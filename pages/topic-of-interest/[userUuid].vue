@@ -4,8 +4,8 @@
 
     {{ $route.params.userUuid }}
 
-    {{ form }}
-
+    {{ report.name }}
+    {{ report.reportType }}
     <div class="relative">
       <div class="form max-w-md">
         <div>
@@ -38,19 +38,30 @@ import { serverUrl } from "../../app.config";
 
 definePageMeta({
   name: "topic-of-interest",
+  layout: "report-layout",
+  image:
+    "https://res.cloudinary.com/dqwfjxn8g/image/upload/v1692097687/pretty-dark-skinned-young-woman-with-afro-hairstyle-smiles-joyfully-advertises-something-cool-appealing_e9hzue.jpg",
 });
 
 const form = ref({
-  topic: "",
-  description: "",
+  topic: "task-planning",
+  description: "i wan tot learn ho to plan my task",
 });
+
+const $route = useRoute();
+
+const reportUuid = computed(() => {
+  return $route.params.userUuid;
+});
+
+const report = ref({});
 
 function saveInfo() {
   console.log(form.value);
 
   axios
     .patch(
-      `${serverUrl}/public/reports/a7da1356-9dad-42ea-b436-f7cf6d8b2b24
+      `${serverUrl}/public/reports/${reportUuid.value}
 `,
       form.value
     )
@@ -69,6 +80,30 @@ function saveInfo() {
       }
     );
 }
+
+function getReport() {
+  console.log("get user report");
+  axios
+    .get(
+      `${serverUrl}/public/reports/${reportUuid.value}
+`
+    )
+    .then(
+      (response: any) => {
+        // redirect to the next page
+
+        console.log(response.data.data);
+        report.value = response.data.data;
+      },
+      (error) => {
+        console.log(error);
+      }
+    );
+}
+
+onMounted(() => {
+  getReport();
+});
 </script>
 
 <style scoped></style>
