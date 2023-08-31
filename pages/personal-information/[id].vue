@@ -6,14 +6,10 @@
     <h1 class="font-semibold my-10">Personal Information</h1>
     <div>
       <div v-for="(item, index) in pageInfo?.form?.personal">
-        <div>
+        <div class="form">
           <label class="capitalize">{{ item.label }}:</label>
 
-          <input
-            v-model="form[item.label]"
-            class="inputbox"
-            :type="item.type"
-          />
+          <input v-model="form[item.label]" :type="item.type" />
         </div>
       </div>
       <div class="flex justify-center">
