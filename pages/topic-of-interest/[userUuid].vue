@@ -34,6 +34,8 @@
 <script setup lang="ts">
 import axios from "axios";
 
+import { serverUrl } from "../../app.config";
+
 definePageMeta({
   name: "topic-of-interest",
 });
@@ -48,7 +50,7 @@ function saveInfo() {
 
   axios
     .patch(
-      `http://localhost:5620/v1/public/reports/a7da1356-9dad-42ea-b436-f7cf6d8b2b24
+      `${serverUrl}/public/reports/a7da1356-9dad-42ea-b436-f7cf6d8b2b24
 `,
       form.value
     )

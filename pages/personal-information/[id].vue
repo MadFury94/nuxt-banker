@@ -119,7 +119,7 @@ function submitForm() {
 
   axios
     .post(
-      `http://localhost:5620/v1/public/reports
+      `${serverUrl}/public/reports
 `,
       {
         name: form.name,
