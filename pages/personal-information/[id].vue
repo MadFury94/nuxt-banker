@@ -58,7 +58,6 @@
 import axios from "axios";
 import { reportMenu } from "../../store/menu";
 import { PageDataType } from "../../types/model";
-import { getRandomNumber } from "../../utils/functions";
 
 const form = reactive<{
   name: string;
@@ -123,16 +122,25 @@ function submitForm() {
   }
 
   axios
-    .post("http://localhost:3000/reports", {
-      id: getRandomNumber(1, 1000),
-      name: form.name,
-      email: form.email,
-      number: form.number,
-      reportType: pageParams.value,
-    })
+    .post(
+      `http://localhost:5620/v1/public/reports
+`,
+      {
+        name: form.name,
+        email: form.email,
+        number: form.number,
+        reportType: pageParams.value,
+      }
+    )
     .then(
-      (response) => {
-        console.log(response);
+      (response: any) => {
+        const uuid = response.data.data.uuid;
+
+        // redirect to the next page
+        navigateTo({
+          name: "topic-of-interest",
+          params: { userUuid: uuid },
+        });
       },
       (error) => {
         console.log(error);
